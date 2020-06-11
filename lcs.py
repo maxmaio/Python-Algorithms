@@ -22,14 +22,10 @@ def commonChild(s1, s2):
                 arr[i][j] = max(arr[i-1][j],arr[i][j-1])
     return arr[s1Len][s2Len]
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
 
     s1 = input()
 
     s2 = input()
 
     result = commonChild(s1, s2)
-
-    fptr.write(str(result) + '\n')
-
-    fptr.close()
